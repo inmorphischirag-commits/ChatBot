@@ -8,7 +8,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-llm = ChatOpenAI()
+llm = ChatOpenAIChatOpenAI(
+            model="openai/qwen3-vl-8b-instruct-fp8-gpu1",
+            base_url="https://gw-aegis.inmorphis.com/v1"
+        )
 
 class ChatState(TypedDict):
     messages: Annotated[list[BaseMessage], add_messages]
