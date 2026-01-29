@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-llm = ChatOpenAIChatOpenAI(
+llm = ChatOpenAI(
             model="openai/qwen3-vl-8b-instruct-fp8-gpu1",
             base_url="https://gw-aegis.inmorphis.com/v1"
         )
